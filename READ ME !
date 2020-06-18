@@ -1,0 +1,56 @@
+ Notes on Para  5/23/90
+
+The goal of this sample code is twofold.
+First, to help broaden your markets.  Try to make it more
+profitable for folks who are writing GS applications by broadening their 
+scope to include Macs in their target audience. To keep them in the
+business of writing GS applications.
+Second, entice some Mac developers over to the GS.  Good Software
+breeds good software, no matter what platform it originated on.
+
+
+The goal of Para and it's source code is to provide GS ( and Mac ) developers
+with an example of how paralell development can work for them.
+I've written a simple game to show the process, primarily because I
+could use more toolbox areas than just a TextEdit GS/Mac demo, or a 
+QuickDraw Mac/GS example, and  also to keep things as simple at 
+the actual application level as possible.  I want you to see the toolbox
+use more than the application code use.
+
+Along those same lines, I've written this in _as simple_ as possible
+K&R C.  I haven't optimized anything, I haven't used any language or
+toolbox obscurities, pecularities, neat ideas, or tricks.  
+I've also used a few parallel coding techniques.  
+There is a mis-perception among both GS and Mac programmers that the 
+machines are very different, and the programming models and worlds
+are too different to transition smoothly between.  The point of Para is
+to show that that is wrong, that the machines are siblings under the lid.
+And to do that I don't want to confuse the basic simplicity of the 
+concept with tricks, that can be learned later.
+This is not the optimum way to parallel code, but I wanted to show 
+the options available more than the 'best' way.  Look at the techniques 
+I used, develop your own, and decide what will work best for your 
+applications. Once you understand the concepts, you can and will find many 
+ways to juice up your code and make the task easier.  
+
+This is a starting point.  It's a working shell of some of the most common 
+toolbox procedures, and you can cut and paste this app.
+The immediate needs are met. An app starts, creates a menu bar,
+opens a window, adds a control, draws, plays sounds, uses dialogs, 
+handles events, and prints. Pretty much everything you'd want from
+the toolbox side of an application.
+
+This is not the final version of the sample.  I'm releasing it on this CD
+in response to WWDC conference participants requests, so please
+be aware that there may be some bugs or inconsistancies in the code.
+In particular there is not as much error checking as you'd need in
+a robust commercial application.  Look for a future full release, plus
+code covering other, more specialized, Parallel issues
+
+And as usual, if you are having problems, contact us at DTS.
+GS specific questions should be addressed to AIIDTS.
+Mac specific questions should go to MACDTS.
+Parallel specific questions can reach me at C.K.HAUN
+
+C.K. Haun
+Apple Computer Developer Technical Support

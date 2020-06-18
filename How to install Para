@@ -1,0 +1,19 @@
+Drag the Parallel folder into your MPW folder, at the same level
+as your shell.
+If you'd like the Parallel folder to be somewhere else, you'll need to
+change the path specifications in the Para.Make and ParaGS.Make
+files.
+I've included a script file that sets up the Para menu I used while 
+writing this.  Open the Scripts folder and drag the ParaMenu file from
+there to your {MPW}Scripts: folder.
+Then run the ParaMenu script to get the Para menu.
+I included this for newcomers to MPW to get an idea of the power of
+the MPW environment, and how you can make MPW work for you in 
+any project you're working on.
+If you'd like to build 'em manually, just hilite the following two lines,
+and press enter
+
+Buildprogram Para
+Buildprogram ParaGS
+
+C.K.H

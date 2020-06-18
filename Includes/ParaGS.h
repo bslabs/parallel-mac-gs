@@ -1,0 +1,44 @@
+/* Header files needed for the GS build, plus GS specific #defines */
+#ifndef __GSHEADERS__
+#define __GSHEADERS__
+#include <CONTROL.H> 
+#include <DESK.H>
+#include <DIALOG.H>
+#include <EVENT.H>
+#include <FCNTL.H>
+#include <FONT.H>
+#include <GSOS.h>
+#include <INTMATH.H>
+#include <IOCTL.H>
+#include <LINEEDIT.H>
+#include <LIST.H>
+#include <LOADER.H>
+#include <LOCATOR.H>
+#include <MALLOC.H>
+#include <MATH.H>
+#include <MEMORY.H>
+#include <MENU.H>
+#include <MIDI.h>
+#include <MISCTOOL.H>
+#include <NOTESEQ.H>
+#include <NOTESYN.H>
+#include <PRINT.H>
+#include <QDAUX.H>
+#include <QUICKDRAW.H>
+#include <SCRAP.H>
+#include <SOUND.H>
+#include <STDFILE.H>
+#include <STDIO.H>
+#include <STDLIB.H>
+#include <STRING.H>
+#include <STRINGS.H>
+#include <TEXTTOOL.H>
+#include <TYPES.H>
+#include <VALUES.H>
+#include <VARARGS.H>
+#include <WINDOW.h> 
+#include <RESOURCES.H> 
+#include "global.h"  
+typedef PicHndl PicHandle;
+#include <loader.h>
+#endif

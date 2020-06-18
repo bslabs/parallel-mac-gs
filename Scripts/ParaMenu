@@ -1,0 +1,66 @@
+
+
+# the paralell project menu
+# I've included this as an example of how you can maximize your use
+# of MPW if you're not yet a real MPW whiz.
+# this is a simple menu definition that puts all my most frequently
+# used Parallel project commands on the menu bar, and 
+# also adds hot keys for the most important.
+# Play with this, and modify it to make it fit your needs and
+# any project you may undertake.
+Set Exit 0
+
+# this makes sure that the Para menu is not there already.  If it 
+# is there, it gets deleted.  If it's not there, the error goes to
+# write-only memory
+DeleteMenu Para ³ Dev:Null  
+# Build the Mac version
+AddMenu Para 'Build Mac/2' 'open "{WorkSheet}";¶
+save -a;directory "{MPW}Paralell:";¶
+BuildProgram Para¶
+  >> "{Worksheet}" ³³ Dev:StdOut;'
+
+# Build the GS version
+AddMenu Para 'Build GS/3' 'open "{WorkSheet}";¶
+save -a;directory "{MPW}Paralell:";¶
+BuildProgram ParaGS¶
+  >> "{Worksheet}" ³³ Dev:StdOut;'
+  
+  # Build both
+  AddMenu Para 'Build Everything/E' 'open "{WorkSheet}";¶
+  open "{WorkSheet}";¶
+directory "{MPW}";¶
+BuildProgram Para¶
+  >> "{Worksheet}" ³³ Dev:StdOut;¶
+  open "{WorkSheet}";¶
+save -a;directory "{MPW}Paralell:";¶
+BuildProgram ParaGS¶
+  >> "{Worksheet}" ³³ Dev:StdOut;'
+  
+# dividing line
+AddMenu Para '(-' ''
+
+# I fiddle around in the headers a lot, so I added menu commands to
+# get me there
+AddMenu Para 'Mac Headers' 'Open "{MPW}Paralell:includes:ParaMac.h"'
+AddMenu Para 'GS Headers' 'Open "{MPW}Paralell:includes:ParaGS.h"'
+
+AddMenu Para '(-' ''
+
+# this opens the Main source file.  I change this based on which
+# file I'm currently concentrating on
+AddMenu Para 'Main' 'Open "{MPW}Paralell:source:ParaMain.c"'
+
+AddMenu Para '(-' ''
+
+# this is easier for me than going to the 'Directory' Menu.  You 
+# drive like you want.
+# the "¹" is option-P
+AddMenu Para 'ParaPrefix/¹' 'setdirectory "{MPW}Paralell:"'
+AddMenu Para '(-' ''
+
+# Derezzes the Mac version, except the code and pictures
+AddMenu Para 'Mac derez' "derez {MPW}Paralell:Para -s PICT -s CODE -i {MPW}Interfaces:RIncludes: > {MPW}Paralell:Resources:ParaMac.r"
+
+
+
